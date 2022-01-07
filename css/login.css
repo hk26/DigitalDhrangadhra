@@ -1,0 +1,132 @@
+/*---------------full body css------------*/
+body{
+  margin: 0;
+  padding: 0;
+  font-family:montserrat;
+  background-image: url('design.png');
+ 
+  background-size:100% 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*---------center form area css------------*/
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  background:rgba(0, 0, 52,0.4);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:500px;
+  box-shadow: 1px 1px 5px 1px #DCB558;
+}
+
+.container h1{
+  text-align: center;
+  padding:0 0 20px 0;
+  color: #DCB558;
+  border-bottom: 1px solid #DCB558;
+}
+
+.container form{
+  padding: 0 40px;
+}
+/*---------------text fields---------*/
+/*-------aleart message---*/
+
+.alert_alert-danger_text-center{
+  color: red;
+  text-align: center;
+}
+
+/*---------------username-pass common  css-------*/
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #DCB558;
+  margin:30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding:  0 5px;
+  height:40px;
+  font-size: 16px;
+  border:none;
+  background: none;
+  outline: none; 
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color:#DCB558;
+  transform: translateY(-50%);
+  font-size: 16PX;
+  pointer-events: none;
+  transition: 0.5s
+}
+
+.txt_field span::before{
+  content:'';
+  position:absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:#DCB558;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top:-5px;
+  color:#A3977B;
+}
+ 
+ /*-------------fprgot password css-------*/
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color:#DCB558;
+  cursor: pointer;
+  text-align: right;
+}
+.pass:hover{
+  text-decoration: underline;
+ 
+}
+ /*---------login button css------------*/
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #000034;
+  background:#000034;
+  border-radius: 8px;
+  font-size: 18px;
+  color:#DCB558;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover{
+  border-color:#DCB558;
+
+}
+
+/*----------signUp option-----------*/
+
+.signup_link{
+
+  text-align:center;
+  color:#DCB558;
+  font-size:16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.signup_link a{
+  color:#DCB558;
+}

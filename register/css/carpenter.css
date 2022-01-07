@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*--------------css for whole body-----------------*/
+:root {
+	  --clr-primary: #651fff;
+	  --clr-gray: #37474f;
+	  --clr-gray-light: #b0bec5;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+  	font-family: "Open Sans", sans-serif;
+	scroll-behavior: smooth;
+	}
+	
+
+/*--------header text (digital dhg)--------*/
+    
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #000034;
+}
+	.logo {
+	  margin-right: auto;
+	}
+
+	.logoimg{
+	  margin: auto;
+	  height: 50px;
+	}
+	 
+	header h2{
+	    text-align:left;
+	    color: #09C3C4;
+	}
+	.nav__links {
+	  list-style: none;
+	  display: flex;
+	}
+
+	.nav__links a,
+	.cta,
+	.overlay__content a {
+	  font-family: "Montserrat", sans-serif;
+	  font-weight: 500;
+	  color: #edf0f1;
+	  text-decoration: none;
+	}
+	.nav__links li {
+	  padding: 0px 20px;
+	}
+	.nav__links li a {
+	  transition: all 0.3s ease 0s;
+	}
+
+	.nav__links li a:hover {
+	  color: #0088a9;
+	}
+	.cta {
+	  margin-left: 20px;
+	  padding: 9px 25px;
+	  background-color: rgba(0, 136, 169, 1);
+	  border: none;
+	  border-radius: 50px;
+	  cursor: pointer;
+	  transition: all 0.3s ease 0s;
+	}
+	.cta:hover {
+	  background-color: rgba(0, 136, 169, 0.8);
+	}
+
+	/* Mobile Nav */
+
+	.menu {
+	  display: none;
+	}
+
+	.overlay {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  left: 0;
+	  top: 0;
+	  background-color: #09C3C4;
+	  overflow-x: hidden;
+	  transition: all 0.5s ease 0s;
+	}
+
+	.overlay--active {
+	  width: 100%;
+	}
+
+	.overlay__content {
+	  display: flex;
+	  height: 100%;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	.overlay a {
+	  padding: 15px;
+	  font-size: 36px;
+	  display: block;
+	  transition: all 0.3s ease 0s;
+	}
+
+	.overlay a:hover,
+	.overlay a:focus {
+	  color: #000034;
+	}
+	.overlay .close {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 60px;
+	  color: #edf0f1;
+	  cursor: pointer;
+	}
+
+	@media screen and (max-height: 450px) {
+	  .overlay a {
+	    font-size: 20px;
+	  }
+	  .overlay .close {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	  }
+	}
+
+	@media only screen and (max-width: 800px) {
+	  .nav__links,
+	  .cta {
+	    display: none;
+	  }
+	  .menu {
+	    display: initial;
+	  }
+	}
+
+
+/*----------------------scrollbar css-----------------------*/
+	::-webkit-scrollbar {
+
+	  width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #D2D9EB; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #8D9FCD; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #282D5F; 
+	}
+
+
+/*----------------------------------profile card-----------------------*/
+
+.wrapper-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.container {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px #000034;
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  width: 280px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.banner-img {
+  position: absolute;
+  background-image: url('https://media.istockphoto.com/photos/top-of-view-vintage-carpenter-tools-in-a-carpentry-workshop-picture-id1143270524?k=6&m=1143270524&s=612x612&w=0&h=478OhAYsX0qbK8z6ZJDWdg6O6YH_VghMW0ymJmbvoUE=');
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-img {
+  width: 8rem;
+  clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+/*---------------------------------------------------------footer css-----------------------------------------------------------*/
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000034;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 22%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
